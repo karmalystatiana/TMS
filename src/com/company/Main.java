@@ -1,18 +1,52 @@
 package com.company;
 
-import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Введите число:");
-        Scanner sc = new Scanner(System.in);
+        System.out.println("Hello, World!");
 
+        int a = 10;
+        int b = 4;
+        System.out.println("a +  b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+        System.out.println("a ++ = " + (a++));
+        System.out.println("a -- = " + (a--));
+        System.out.println("++a = " + (++a));
+        System.out.println("--a = " + (--a));
 
-        String number = sc.next("user");
+        System.out.println("1 == 1 " + (1 == 1));
+        System.out.println("1 != 1 " + (1 != 1));
+        System.out.println("1 != 2 " + (1 != 2));
+        System.out.println("1 < 2 " + (1 < 2));
+        System.out.println("1 > 2 " + (1 > 2));
 
-        System.out.println("Спасибо! Вы ввели число " + number);
+        System.out.println("1 & 1 = " + (1 & 1));
+        System.out.println("1 | 1 = " + (1 | 1));
+        System.out.println("1 ^ 1 = " + (1 ^ 1));
+        System.out.println(" ~1 " + (~1));
 
-        sc.close();//вот теперь мы сделали все правильно!
+        System.out.println((1 == 1) && (2 == 2));
+        System.out.println((2 == 1) && (2 == 2));
+        System.out.println((1 == 1) || (2 == 2));
+        System.out.println((2 == 1) || (2 == 2));
+        System.out.println(!(1 == 1));
+        System.out.println(!(2 == 1));
+
+        int c = 10;
+        c += 5;
+        System.out.println(c);
+        c -= 3;
+        System.out.println(c);
+        c *= 2;
+        System.out.println(c);
+        c /= 2;
+        System.out.println(c);
+
+        int d = (c < a) ? 1 : 0;
+        System.out.println(d);
 
     }
 }
